@@ -53,13 +53,48 @@ It is Lot 3 that is disproportionately causing the variance at the full lot leve
 
 ## Deliverable 3: T-Tests on Suspension Coils
 Step 1: In your MechaCarChallenge.RScript, write an RScript using the t.test() function to determine if the PSI across all manufacturing lots is statistically different from the population mean of 1,500 pounds per square inch. Save your MechaCarChallenge.RScript file to your GitHub repository.
-![image](https://user-images.githubusercontent.com/104685001/185936951-e0a15b63-5ba2-49c4-9e95-69b72916ddaf.png)
 
 Steps 2-3: Next, write three more RScripts in your MechaCarChallenge.RScript using the t.test() function and its subset() argument to determine if the PSI for each manufacturing lot is statistically different from the population mean of 1,500 pounds per square inch.
 
 ## Written Summary:
+![image](https://user-images.githubusercontent.com/104685001/185936951-e0a15b63-5ba2-49c4-9e95-69b72916ddaf.png)
+The true mean of the sample is 1498.78, with a p-Value of 0.06, which is higher than the common significance level of 0.05, there is NOT enough evidence to support rejecting the null hypothesis. Also, the mean of all three of these manufacturing lots is statistically similar to the presumed population mean of 1500.
+
+Next looking at each individual lots:
+
+Lot 1 sample actually has the true sample mean of 1500, with a p-Value of 1, clearly we cannot reject (i.e. accept) the null hypothesis that there is no statistical difference between the observed sample mean and the presumed population mean (1500).
+Lot 2 has essentially the same outcome with a sample mean of 1500.02, a p-Value of 0.61; the null hypothesis cannot be rejected, and the sample mean and the population mean of 1500 are statistically similar.
+However, for Lot 3, the sample mean is 1496.14 and the p-Value is 0.04, which is lower than the common significance level of 0.05. All indicating to reject the null hypothesis that this sample mean and the presumed population mean are not statistically different.
 ![image](https://user-images.githubusercontent.com/104685001/185937152-a2303bce-bf14-4f6b-a378-5174f50de4af.png)
 
 ![image](https://user-images.githubusercontent.com/104685001/185937245-40f47ec5-d5c4-4568-ac42-9a602fa498b8.png)
 
 ![image](https://user-images.githubusercontent.com/104685001/185937323-08aa6c6a-efde-4ed4-94fa-8711e5f63fcb.png)
+
+## Deliverable 4: Design a Study Comparing the MechaCar to the Competition
+Using your knowledge of R, design a statistical study to compare performance of the MechaCar vehicles against performance of vehicles from other manufacturers.
+
+First we need to collect data on MechaCar and its comparable models across several different manufacturers over the last 5 years.
+This involves answering the following questions:
+
+1. What are the competitions' comparable models to be involved in the study?
+2. Of the entire population in question1, which models are closely competing with MechaCar's cars?
+3. What are current customer demands that affects the sales price?
+
+### Metrics
+Collecting data for comparable models across all major manufacturers for past 3 years for the following metrics:
+
+* Safety Feature Rating: Independent Variable
+* Current Price (Selling): Dependent Variable
+* Drive Package : Independent Variable
+* Engine (Electric, Hybrid, Gasoline / Conventional): Independent Variable
+* Resale Value: Independent Variable
+* Average Annual Cost of ownership (Maintenance): Independent Variable
+* MPG (Gasoline Efficiency): Independent Variable
+
+### Hypothesis: Null and Alternative
+Null Hypothesis (Ho): MechaCar is priced correctly based on its performance of key factors for its genre.
+Alternative Hypothesis (Ha): MechaCar is NOT priced correctly based on performance of key factors for its genre.
+
+### Statistical Tests
+A multiple linear regression would be used to determine the factors that have the highest correlation/predictability with the list selling price (dependent variable); which combination has the greatest impact on price (it may be all of them!)
