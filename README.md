@@ -8,3 +8,22 @@ In this challenge, you’ll help Jeremy and the data analytics team do the follo
 * Collect summary statistics on the pounds per square inch (PSI) of the suspension coils from the manufacturing lots
 * Run t-tests to determine if the manufacturing lots are statistically different from the mean population
 * Design a statistical study to compare vehicle performance of the MechaCar vehicles against vehicles from other manufacturers. For each statistical analysis, you’ll write a summary interpretation of the findings.
+
+## Deliverable 1: Linear Regression to Predict MPG
+Steps 1 - 4: Download, import and read MechaCar_mpg.csv file as a dataframe.
+![image](https://user-images.githubusercontent.com/104685001/185924817-0489f52c-658e-40f4-a058-fbe81f5ae899.png)
+
+Step 5: Perform linear regression using the lm() function. In the lm() function, pass in all six variables (i.e., columns), and add the dataframe you created in Step 4 as the data parameter.
+![image](https://user-images.githubusercontent.com/104685001/185925091-d36aa81d-9d43-4b80-a283-21f07c743d5a.png)
+
+Step 6-7: Using the summary() function, determine the p-value and the r-squared value for the linear regression model. 
+Save your MechaCarChallenge.RScript file to your GitHub repository.
+
+![image](https://user-images.githubusercontent.com/104685001/185925362-98f74755-3b57-4efc-9a4f-8ddd32ed5eb1.png)
+
+## Summary:
+1. Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+2. Is the slope of the linear model considered to be zero? Why or why not?
+3. Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+
+
