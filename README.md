@@ -31,3 +31,22 @@ The p-Value for this model, p-Value: 5.35e-11, is much smaller than the assumed 
 **3. Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?**
 If we remove the less impactful independent variables (vehicle weight, spoiler angle, and All Wheel Drive), the predictability does decrease, but not drastically: the r-squared value falls from 0.7149 to 0.674.
 
+## Deliverable 2: Create Visualizations for the Trip Analysis
+Steps 1-2: Download, import and read in the Suspension_Coil.csv file as a table.
+![image](https://user-images.githubusercontent.com/104685001/185927577-8970bbd7-db8c-48b1-b7b1-412bcb3e7ee2.png)
+
+Step 3: Write an RScript that creates a total_summary dataframe using the summarize() function to get the mean, median, variance, and standard deviation of the suspension coil’s PSI column
+![image](https://user-images.githubusercontent.com/104685001/185927752-80b7723f-1d61-4e20-a408-59eaf673dcf7.png)
+
+Steps 4-5: Write an RScript that creates a lot_summary dataframe using the group_by() and the summarize() functions to group each manufacturing lot by the mean, median, variance, and standard deviation of the suspension coil’s PSI column. Save your MechaCarChallenge.RScript file to your GitHub repository.
+![image](https://user-images.githubusercontent.com/104685001/185927901-3f3d9ce6-9e07-421b-9bdb-7c57ef8520f3.png)
+
+### Summary:
+**The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?**
+For the entire population of the production lot, the variance of the coils is 62.29 PSI, which is < 100 PSI variance requirement.
+Lot 1 and Lot 2 are well within the 100 PSI variance requirement; with variances of 0.98 and 7.47 respectively. 
+
+However, it is Lot 3 that is showing much larger variance in performance and consistency, with a variance of 170.29. 
+It is Lot 3 that is disproportionately causing the variance at the full lot level.
+
+![image](https://user-images.githubusercontent.com/104685001/185928709-c1745f73-01b0-4eca-b7a2-a52024950856.png)
