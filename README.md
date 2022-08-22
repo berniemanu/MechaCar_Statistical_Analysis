@@ -50,3 +50,16 @@ However, it is Lot 3 that is showing much larger variance in performance and con
 It is Lot 3 that is disproportionately causing the variance at the full lot level.
 
 ![image](https://user-images.githubusercontent.com/104685001/185928709-c1745f73-01b0-4eca-b7a2-a52024950856.png)
+
+## Deliverable 3: T-Tests on Suspension Coils
+Step 1: In your MechaCarChallenge.RScript, write an RScript using the t.test() function to determine if the PSI across all manufacturing lots is statistically different from the population mean of 1,500 pounds per square inch. Save your MechaCarChallenge.RScript file to your GitHub repository.
+![image](https://user-images.githubusercontent.com/104685001/185936951-e0a15b63-5ba2-49c4-9e95-69b72916ddaf.png)
+
+Steps 2-3: Next, write three more RScripts in your MechaCarChallenge.RScript using the t.test() function and its subset() argument to determine if the PSI for each manufacturing lot is statistically different from the population mean of 1,500 pounds per square inch.
+
+## Written Summary:
+![image](https://user-images.githubusercontent.com/104685001/185937152-a2303bce-bf14-4f6b-a378-5174f50de4af.png)
+
+![image](https://user-images.githubusercontent.com/104685001/185937245-40f47ec5-d5c4-4568-ac42-9a602fa498b8.png)
+
+![image](https://user-images.githubusercontent.com/104685001/185937323-08aa6c6a-efde-4ed4-94fa-8711e5f63fcb.png)
