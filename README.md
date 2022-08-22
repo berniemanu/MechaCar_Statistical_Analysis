@@ -22,12 +22,12 @@ Save your MechaCarChallenge.RScript file to your GitHub repository.
 ![image](https://user-images.githubusercontent.com/104685001/185925362-98f74755-3b57-4efc-9a4f-8ddd32ed5eb1.png)
 
 ## Summary:
-1. Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+**1. Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?**__
 Vehicle length and ground clearance are statistically likely to provide non-random amounts of variance to the model. They also have a significant impact on miles per gallon on the MechaCar prototype. Conversely, the vehicle weight, spoiler angle, and All Wheel Drive (AWD) have p-Values that indicate a random amount of variance with the dataset
 
-2. Is the slope of the linear model considered to be zero? Why or why not?
+**2. Is the slope of the linear model considered to be zero? Why or why not?**__
 The p-Value for this model, p-Value: 5.35e-11, is much smaller than the assumed significance level of 0.05%. This indicates there is sufficient evidence to reject our null hypothesis, which further indcates that the slope of this linear model is not zero.
 
-3. Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+**3. Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?**
 If we remove the less impactful independent variables (vehicle weight, spoiler angle, and All Wheel Drive), the predictability does decrease, but not drastically: the r-squared value falls from 0.7149 to 0.674.
 
